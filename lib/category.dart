@@ -21,14 +21,14 @@ class Category extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return Material(
       color: Colors.transparent,
       child: Container(
         height: _rowHeight,
         child: InkWell(
           borderRadius: BorderRadius.circular(_borderRadius),
-          highlightColor: Colors.teal,
+          highlightColor: _hightlightColor,
           splashColor: Colors.greenAccent,
           onTap: () => {},
           child: Padding(

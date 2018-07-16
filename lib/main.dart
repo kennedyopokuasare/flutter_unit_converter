@@ -19,11 +19,10 @@ class HelloRectangle extends StatelessWidget {
               "Hello",
               style: TextStyle(fontSize: 40.0),
             ),
-            Category(iconLocation: Icons.cake, name: "Happy Birthday")
-          ],
-        )),
+            Category.withColor (name: "Happy Birthday",iconLocation: Icons.cake,  color:  Colors.amber
+        )]),
       ),
-    );
+    ),);
   }
 }
 
@@ -37,6 +36,7 @@ void main() {
         ),
         body: CategoryRoute(),
       ),
+
     ),
   );
 }

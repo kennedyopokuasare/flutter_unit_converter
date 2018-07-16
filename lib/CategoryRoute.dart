@@ -28,15 +28,24 @@ class CategoryRoute extends StatelessWidget {
     'Energy',
     'Currency',
   ];
-
+  static const _unitIcons = <IconData>[
+    Icons.cake,
+    Icons.cake,
+    Icons.equalizer,
+    Icons.archive,
+    Icons.timer,
+    Icons.storage,
+    Icons.cake,
+    Icons.monetization_on,
+  ];
   static const _baseColors = <Color>[
     Colors.teal,
     Colors.orange,
-    Colors.pinkAccent,
-    Colors.blueAccent,
+    Colors.pink,
+    Colors.blue,
     Colors.yellow,
-    Colors.greenAccent,
-    Colors.purpleAccent,
+    Colors.green,
+    Colors.purple,
     Colors.red,
   ];
 
@@ -58,7 +67,7 @@ class CategoryRoute extends StatelessWidget {
       categories.add(Category.withColor(
         name: _categoryNames[i],
         color: _baseColors[i],
-        iconLocation: Icons.cake,
+        iconLocation: _unitIcons[i],
       ));
     }
 
